@@ -1,0 +1,59 @@
+.header
+    position: sticky
+    top: 0
+    width: 100%
+    height: 8.5rem
+    background-color: #ffffff
+    box-shadow: 0px 1px 8px rgba(83, 109, 122, 0.29)
+    z-index: 5
+    &__container
+        padding-top: 1.5rem
+        padding-bottom: 1.5rem
+        display: flex
+        justify-content: space-between
+    &__left-wrapper
+        display: flex
+    &__logo
+        margin-left: 1.2rem
+        margin-right: 3rem
+    &__nav
+        display: flex
+        list-style-type: none
+        align-items: center
+    &__icon
+        margin-right: .6rem
+        cursor: pointer
+    &__item
+        font-size: 1.6rem
+        margin-right: 4.5rem
+        transition: all .2s
+        &:last-child
+            margin-right: 0
+        &:hover
+            transform: translateY(-.2rem) scale(1.02)
+    &__link
+        height: 3.4rem
+        text-decoration: none
+        color: #000000
+        &:hover
+            color: #17A550
+    &__right-wrapper
+        display: flex
+        flex-direction: row
+        align-items: center
+    &__email-icon
+        height: 2.4rem
+        width: 3.4rem
+        margin-right: 1.2rem
+    &__email-link
+        text-decoration: none
+        color: #000000
+        font-size: 1.4rem
+        margin-right: 1.2rem
+        transition: all .2s
+        &:hover
+            color: #d4a31d
+            transform: translateY(-.2rem)
+    &__email-links
+        &:hover
+            color: #d4a31d

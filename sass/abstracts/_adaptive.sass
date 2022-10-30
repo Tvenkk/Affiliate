@@ -1,0 +1,380 @@
+@media (max-width: 1200px)
+    .container
+        width: 960px
+    html
+        font-size: 55%
+
+    .header
+        box-shadow: 0px 1px 8px rgba(83, 109, 122, 0.5)
+
+    .section-first
+        margin-bottom: 3rem
+        &__img
+            width: 48rem
+
+    .section-second
+        margin-bottom: 8rem
+        &__big-image
+            width: 53.5rem
+        &__small-image
+            width: 23.5rem
+
+    .mini-section
+        margin-bottom: 8rem
+
+    .third-section
+        margin-bottom: 8rem
+
+    .card
+        width: 34rem
+        &__img
+            width: 34rem
+        &__text
+            margin-left: 1.5rem
+
+    .title-third_ml
+        margin-left: 1.5rem
+
+    .email-section
+        margin-bottom: 8rem
+
+    .form
+        &__input
+            height: 6rem
+            font-size: 1.6rem
+
+// Конец первых медиаправил
+
+
+@media (max-width: 991px)
+    .container
+        width: 720px
+    html
+        font-size: 42%
+
+    .header
+        &__logo
+            width: 15.5rem
+        &__item
+            font-size: 1.8rem
+        &__email-link
+            font-size: 1.8rem
+
+    .section-first
+        &__title
+            margin-bottom: 1.2rem
+        &__text
+            font-size: 2.4rem
+            line-height: 2.8rem
+
+    .paragraph
+        font-size: 1.8rem
+        line-height: 2.4rem
+
+    .btn
+        &_size
+            width: 15.5rem
+
+    .btn-view
+        width: 25rem
+        font-size: 2rem
+
+    .form
+        &__input
+            height: 8rem
+            font-size: 2.2rem
+        &__button
+            font-size: 1.5rem
+
+    .footer
+        &__form
+            height: 6rem
+        &__input
+            height: 5.9rem
+            font-size: 2.1rem
+        &__btn
+            height: 5.9rem
+            font-size: 1.6rem
+        &__center-wrapper
+            margin-bottom: 1rem
+        &__text
+            font-size: 1.7rem
+        &__end-text
+            font-size: 1.4rem
+
+    .card
+        &__text
+            font-size: 1.8rem
+            line-height: 2.3rem
+
+// Конец вторых медиаправил
+
+
+@media (max-width: 767px)
+    .container
+        width: 540px
+    html
+        font-size: 58%
+
+    .header
+        &__logo
+            width: 17.5rem
+        &__nav
+            display: none
+        &__right-wrapper
+            display: none
+
+    .section-first
+        margin-top: 1rem
+        margin-bottom: 0rem
+        flex-direction: column-reverse
+        &__wrapper
+            margin-bottom: 4rem
+
+    .section-second
+        margin-bottom: 4rem
+        &__wrapper
+            flex-direction: column
+            justify-content: center
+            margin-bottom: 6.5rem
+        &__left-wrapper
+            padding-right: 0rem
+            margin-bottom: 4rem
+        &__right-wrapper
+            padding-left: 0rem
+        &__big-image
+            width: 100%
+            margin-bottom: 2rem
+        &__title
+            &_t-a-c
+                text-align: center
+
+        .wrapper-img-text
+            margin-bottom: 2rem
+
+    .mini-section
+        margin-bottom: 5rem
+        &__img
+            width: 4rem
+        &__text
+            font-size: 1.7rem
+
+    .third-section
+        margin-bottom: 2rem
+        &__wrapper
+            flex-direction: column
+            align-items: center
+            margin-bottom: 4rem
+
+    .card
+        width: 45rem
+        margin-bottom: 4rem
+        &__img
+            width: 45rem
+            margin-bottom: 1rem
+        &__text
+            max-width: 42rem
+
+    .title-third_mb
+        margin-bottom: 1rem
+
+    .email-section
+        flex-direction: column-reverse
+        margin-bottom: 3rem
+        &__wrapper
+            margin-bottom: 4rem
+
+    .footer
+        &__container
+            flex-direction: column
+        &__left-wrapper
+            height: 26rem
+            width: 81%
+        &__center-wrapper
+            height: 60rem
+            width: 90%
+        &__right-wrapper
+            width: 85%
+        &__img
+            width: 22.9rem
+            height: 16.5rem
+            &:hover
+                transform: scale(1.03)
+        &__text
+            font-size: 2rem
+        &__input
+            width: 35.5rem
+
+    .navigation
+        display: contents
+        &__toggle
+            display: none
+        &__button
+            background: white
+            height: 8rem
+            width: 8rem
+            border-radius: 50%
+            position: fixed
+            right: 2rem
+            top: .5rem
+            z-index: 200
+            text-align: center
+            cursor: pointer
+        &__background
+            height: 3rem
+            width: 3rem
+            border-radius: 50%
+            background: #17A550
+            position: fixed
+            right: 5rem
+            top: 4rem
+            z-index: 100
+            transition: all .6s
+        &__nav
+            height: 100vh
+            position: fixed
+            top: 0
+            right: 0
+            z-index: 150
+            opacity: 0
+            width: 0
+            transition: all .4s
+            right: -17rem
+        &__list
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            list-style: none
+        &__item
+            text-align: center
+            margin-bottom: 4rem
+        &__link
+            font-size: 4rem
+            color: white
+            text-decoration: none
+            text-transform: uppercase
+            letter-spacing: .5rem
+            display: inline-block
+            transition: all .3s
+            &:hover, &:active
+                transform: translateX(1rem)
+                opacity: 0.4
+
+        &__toggle:checked ~ &__background
+            transform: scale(80)
+        &__toggle:checked ~ &__nav
+            right: 0
+            opacity: 1
+            width: 100%
+        &__icon
+            position: relative
+            margin-top: 38px
+            &,
+            &::before,
+            &::after
+                width: 30px
+                height: 2px
+                background: black
+                display: inline-block
+            &::before,
+            &::after
+                content: ""
+                position: absolute
+                left: 0
+                transition: all .2s
+            &::before
+                top: -10px
+            &::after
+                top: 10px
+
+        &__toggle:checked + &__button &__icon
+            background: transparent
+        &__toggle:checked + &__button &__icon::before
+            top: 0
+            transform: rotate(135deg)
+        &__toggle:checked + &__button &__icon::after
+            top: 0
+            transform: rotate(-135deg)
+
+// Конец третьих медиаправил
+
+
+@media (max-width: 575px)
+    .container
+        width: 95%
+    html
+        font-size: 60%
+
+    .section-first
+        padding: 3rem
+        &__wrapper
+            width: 100%
+        &__img
+            width: 100%
+        &__text
+            font-size: 2.2rem
+
+    .section-second
+        padding: 2rem
+        margin-bottom: 1rem
+        &__wrapper
+            margin-bottom: 3.5rem
+        &__left-wrapper
+            width: 100%
+        &__right-wrapper
+            width: 100%
+        &__small-image
+            width: 18.5rem
+
+    .mini-section
+        margin-bottom: 2rem
+        &__text
+            font-size: 1.4rem
+            line-height: 2.3rem
+
+    .third-section
+        padding: 2rem
+        &__wrapper
+            width: 100%
+            margin-bottom: 2rem
+
+    .email-section
+        padding: 3rem
+        &__wrapper
+            width: 100%
+        &__img
+            width: 100%
+
+    .card
+        width: 90%
+        &__img
+            width: 100%
+
+    .btn
+        text-align: center
+
+    .form
+        &__input
+            width: 100%
+
+    .footer
+        &__left-wrapper
+            width: 100%
+        &__center-wrapper
+            width: 100%
+        &__right-wrapper
+            width: 100%
+        &__input
+            width: 65%
+        &__end-text
+            margin-right: 0rem
+            margin-bottom: .3rem
+        &__end-left
+            flex-direction: column
+        &__end-right
+            flex-direction: column
+
+    .navigation
+        &__link
+            font-size: 4rem
